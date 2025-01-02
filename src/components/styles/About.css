@@ -1,0 +1,109 @@
+#about-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+}
+
+.about-content {
+    z-index: 1; /* Ensure the content is above the particles */
+    display: flex;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px; /* Increased padding for a more card-like appearance */
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17); /* Adding shadow for depth */
+    border-radius: 10px; /* Rounded corners for the card effect */
+    margin: 10px; /* Space between cards */
+    max-width: 500px;
+    height: 500px;
+}
+
+.about-container img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures the image is treated as a block-level element, centering it if needed */
+    margin: 10px auto; /* Centers the image horizontally within its container */
+    border-radius: 10px;
+}
+
+.biography-container {
+    width: 50%;
+    padding: 20px; /* Increased padding for a more card-like appearance */
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17); /* Adding shadow for depth */
+    border-radius: 10px; /* Rounded corners for the card effect */
+    margin: 10px; /* Space between cards */
+    max-width: 500px;
+    height: 500px;
+    color: black;
+}
+
+#black-particle-system {
+  position:absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+.biography-container p {
+    position: relative;
+    overflow: hidden;
+    cursor: crosshair; /* Change cursor to crosshair for paintbrush effect */
+  }
+  
+.stain-effect {
+    position: absolute;
+    background-color: black;
+    opacity: 0.2;
+    border-radius: 50%;
+    pointer-events: none; /* Prevents interaction with the stain elements */
+    width: 20px;
+    height: 20px;
+}
+
+/* Media query for screens below the threshold (e.g., 768px) */
+@media screen and (max-width: 1023px) {
+    .about-content {
+        flex-direction: column; /* Ensure content within the about section is stacked vertically */
+        height: auto;
+    }
+    .about {
+        height: auto; /* Adjust height for smaller screens */
+        font-size: 15px;
+        flex-direction: column;
+    }
+    
+    .about-container, .biography-container {
+        max-width: 475px; /* Adjust width for a bit of margin on the sides */
+        width: 90%; /* Ensure they take up the full width of their parent */
+        margin-bottom: 20px; /* Add some space between the stacked containers */
+        flex-direction: column; /* Ensure content within containers is stacked vertically */
+        height: auto;;
+    }
+
+    .about-container img {
+        height: auto; /* Maintain aspect ratio */
+    }
+}
