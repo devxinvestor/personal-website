@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { Button } from '../scripts/Button';
 import '../styles/Navbar.css';
 import { scrollToSection } from '../scripts/Scroll';
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
@@ -20,9 +22,9 @@ function Navbar() {
 
   useEffect(() => {
     showButton();
+    window.addEventListener('resize', showButton);
+    return () => window.removeEventListener('resize', showButton);
   }, []);
-
-  window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -30,19 +32,27 @@ function Navbar() {
         <div className='navbar-container'>
           <div className='navbar-logo' onClick={closeMobileMenu}>
             <div
-                  className='devin-mohr-link'
-                  onClick={() => {
-                    closeMobileMenu();
-                    scrollToSection('home-section');
-                  }}
-                >
-                  DEVIN MOHR
-              </div>
-            <a href='https://www.linkedin.com/in/devinmohr/' target='_blank' rel='noopener noreferrer'>
-              <i className='fa fa-linkedin-square'/>
+              className='devin-mohr-link'
+              onClick={() => {
+                closeMobileMenu();
+                scrollToSection('home-section');
+              }}
+            >
+              DEVIN MOHR
+            </div>
+            <a
+              href='https://www.linkedin.com/in/devinmohr/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <i className='fa fa-linkedin-square' />
             </a>
-            <a href='https://github.com/devxinvestor' target='_blank' rel='noopener noreferrer'>
-              <i className='fa fa-github-square'/>
+            <a
+              href='https://github.com/devxinvestor'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <i className='fa fa-github-square' />
             </a>
           </div>
           <div className='menu-icon' onClick={handleClick}>
@@ -51,14 +61,14 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <div
-                  className='nav-links'
-                  onClick={() => {
-                    closeMobileMenu();
-                    scrollToSection('home-section');
-                  }}
-                >
-                  Home
-                </div>
+                className='nav-links'
+                onClick={() => {
+                  closeMobileMenu();
+                  scrollToSection('home-section');
+                }}
+              >
+                Home
+              </div>
             </li>
             <li className='nav-item'>
               <div
