@@ -82,6 +82,7 @@ function Navbar() {
                 Projects
               </div>
             </li>
+            {/*
             <li>
               <a
                 href='Devin Mohr resume.pdf'
@@ -93,8 +94,11 @@ function Navbar() {
                 Resume
               </a>
             </li>
+            */}
           </ul>
+          {/*
           {button && <Button buttonStyle='btn--outline'>Resume</Button>}
+          */}
         </div>
       </nav>
     </>

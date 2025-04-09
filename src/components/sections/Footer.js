@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='footer-container'>
       <div className='social-media-wrap'>
-        <small className='website-rights'>Devin Mohr © 2024</small>
+        <small className='website-rights'>Devin Mohr © 2025</small>
         <div className='social-icons'>
           <a href='https://www.linkedin.com/in/devinmohr/' target='_blank' rel='noopener noreferrer'>
               <i className='fa fa-linkedin-square'/>

@@ -1,7 +1,9 @@
 .projects {
   padding: 4rem;
-  background: #fff;
-  position: relative; /* Ensure the container is relatively positioned */
+  background-image: url('../../../public/images/black_bkg.jpg');
+  background-size: 100% 200%;
+  background-position: top;
+  position: relative;
   overflow: hidden;
   color: #fff;
   font-size: 32px;
@@ -120,6 +122,13 @@ h1 {
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects {
+    background-size: 200% 150%;
+    background-position: left top;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

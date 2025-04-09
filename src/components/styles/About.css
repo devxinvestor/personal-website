@@ -16,6 +16,9 @@
     text-align: center;
     padding: 0 20px;
     display: flex;
+    background-image: url('../../../public/images/white_bkg.jpg');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
 }
 
 .about-content {
@@ -93,6 +96,8 @@
         height: auto; /* Adjust height for smaller screens */
         font-size: 15px;
         flex-direction: column;
+        background-position: center top; /* This aligns to the top center */
+        background-size: 200% 200%; /* Double the height so only the top half shows */
     }
     
     .about-container, .biography-container {

@@ -1,13 +1,11 @@
 import React from 'react';
 import '../styles/Projects.css';
 import ProjectItem from '../scripts/ProjectItem';
-import ParticlesComponent from '../scripts/Particles';
 
 function Projects() {
   return (
     <div id='projects-section'>
       <div className='projects'>
-        <ParticlesComponent id="whiteparticles" />
         <div className='projects-title-section'>
           <h1>Coding Portfolio</h1>
         </div>
@@ -16,15 +14,35 @@ function Projects() {
             <ul className='projects__items'>
               <ProjectItem
                 src='images/Alzheimer_Detection.jpeg'
-                text='Altheimzer Disease Detection using CNN'
+                text="Alzheimer's Disease Detection using CNN"
                 label='Python'
                 url='https://github.com/devxinvestor/Alzheimer-Detection'
+              />
+              <ProjectItem
+                src='images/TradEx.png'
+                text='TradEx – Community Trading App'
+                label='Svelte, Go, SQLite'
+                url='https://github.com/goldenbergdaniel/SWE-Final-Project'
+              />
+            </ul>
+            <ul className='projects__items'>
+              <ProjectItem
+                src='images/Options_Pic.png'
+                text="ML Options Pricing Model Using XGBoost & GARCH"
+                label='Python'
+                url='https://github.com/devxinvestor/Options'
               />
               <ProjectItem
                 src='images/bw_algo.jpg'
                 text='Algorithmic Trading Stock Screener'
                 label='Python'
                 url='https://github.com/devxinvestor/Algorithmic-Trading'
+              />
+              <ProjectItem
+                src='images/Minesweeper.png'
+                text='Minesweeper'
+                label='C++'
+                url='https://github.com/devxinvestor/Minesweeper'
               />
             </ul>
             <ul className='projects__items'>

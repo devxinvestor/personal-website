@@ -19,7 +19,8 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <a href='/Devin Mohr resume.pdf'
+    <a 
+    href='/Devin Mohr resume.pdf'
     target='_blank'
     rel='noopener noreferrer'
     className='btn-mobile'>

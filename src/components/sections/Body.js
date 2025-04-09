@@ -34,7 +34,6 @@ function Body() {
       <div className='body-container'>
         <ParticlesComponent id="tsparticles" />
         <div className="typing-container">
-          {/* The sentence will be typed here */}
           <span id="sentence" className="sentence">
             <h1>
               {sentence}
