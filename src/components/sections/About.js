@@ -23,7 +23,7 @@ function About() {
                                     style={{ top: `${stain.y}px`, left: `${stain.x}px` }}
                                 />
                             ))}
-                            I am a Junior at the University of Florida pursuing a Bachelor of Science 
+                            I am a Senior at the University of Florida pursuing a Bachelor of Science 
                             in Computer Science and a Master of Science in Finance. I enjoy investing 
                             and analyzing companies using both fundamental and technical processes. I am 
                             also involved in ML Research through UF Health Shands Hospital.
